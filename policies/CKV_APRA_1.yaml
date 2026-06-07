@@ -1,0 +1,12 @@
+metadata:
+  id: "CKV_APRA_1"
+  name: "Ensure EBS volumes are encrypted (APRA CPS 234 para 21)"
+  category: "ENCRYPTION"
+  guideline: "https://www.apra.gov.au/sites/default/files/cps_234_july_2019_for_public_release.pdf"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - "aws_ebs_volume"
+  attribute: "encrypted"
+  operator: "equals"
+  value: true

@@ -1,0 +1,12 @@
+metadata:
+  id: "CKV_APRA_7"
+  name: "Ensure CloudTrail log file validation is enabled (APRA CPS 234 para 21)"
+  category: "LOGGING"
+  guideline: "https://www.apra.gov.au/sites/default/files/cps_234_july_2019_for_public_release.pdf"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - "aws_cloudtrail"
+  attribute: "enable_log_file_validation"
+  operator: "equals"
+  value: true

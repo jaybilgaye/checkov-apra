@@ -1,0 +1,12 @@
+metadata:
+  id: "CKV_APRA_8"
+  name: "Ensure IAM account password policy requires length >= 14 (APRA CPS 234 para 21)"
+  category: "IAM"
+  guideline: "https://www.apra.gov.au/sites/default/files/cps_234_july_2019_for_public_release.pdf"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - "aws_iam_account_password_policy"
+  attribute: "minimum_password_length"
+  operator: "greater_than_or_equal"
+  value: 14

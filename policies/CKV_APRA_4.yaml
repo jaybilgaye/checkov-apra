@@ -1,0 +1,12 @@
+metadata:
+  id: "CKV_APRA_4"
+  name: "Ensure RDS instances have automated backups (APRA CPS 234 para 21)"
+  category: "BACKUP_AND_RECOVERY"
+  guideline: "https://www.apra.gov.au/sites/default/files/cps_234_july_2019_for_public_release.pdf"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - "aws_db_instance"
+  attribute: "backup_retention_period"
+  operator: "greater_than"
+  value: 0

@@ -1,0 +1,12 @@
+metadata:
+  id: "CKV_APRA_5"
+  name: "Ensure KMS keys have rotation enabled (APRA CPS 234 para 21)"
+  category: "ENCRYPTION"
+  guideline: "https://www.apra.gov.au/sites/default/files/cps_234_july_2019_for_public_release.pdf"
+definition:
+  cond_type: "attribute"
+  resource_types:
+    - "aws_kms_key"
+  attribute: "enable_key_rotation"
+  operator: "equals"
+  value: true
