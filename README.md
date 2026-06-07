@@ -52,5 +52,6 @@ more (S3 SSE via the split encryption resource, VPC flow logs, GuardDuty) can fo
 
 ## Related
 
+- 📖 Blog: [Mapping CPS 234 Controls to AWS Config Rules](https://aiopsone.com/blog/cps-234-aws-controls-mapping) — the control mapping these checks enforce in Terraform.
 - 🔗 Pairs with the **[aiopsone-au-landing-zone](https://github.com/jaybilgaye/aiopsone-au-landing-zone)** Terraform (scan it in CI).
 - 🌐 More at **[aiopsone.com](https://aiopsone.com)**.
